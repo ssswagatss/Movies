@@ -14,5 +14,7 @@ namespace Movies.Domain
 
         }
         public DbSet<Actor> Actors { get; set; }
+        public DbSet<Movie> Movies { get; set; }
+        public DbSet<Producer> Producers { get; set; }
     }
 }

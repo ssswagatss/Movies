@@ -154,7 +154,9 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Domain\Producer.cs" />
     <Compile Include="Domain\Actor.cs" />
+    <Compile Include="Domain\Movie.cs" />
     <Compile Include="Domain\MovieContext.cs" />
     <Compile Include="Enums\Gender.cs" />
     <Compile Include="Global.asax.cs">
@@ -163,6 +165,14 @@
     <Compile Include="Migrations\201808161117194_Adds Actor table.cs" />
     <Compile Include="Migrations\201808161117194_Adds Actor table.Designer.cs">
       <DependentUpon>201808161117194_Adds Actor table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808161127550_Other Tables added.cs" />
+    <Compile Include="Migrations\201808161127550_Other Tables added.Designer.cs">
+      <DependentUpon>201808161127550_Other Tables added.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808161130147_Actor and movie relations.cs" />
+    <Compile Include="Migrations\201808161130147_Actor and movie relations.Designer.cs">
+      <DependentUpon>201808161130147_Actor and movie relations.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -227,6 +237,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201808161117194_Adds Actor table.resx">
       <DependentUpon>201808161117194_Adds Actor table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808161127550_Other Tables added.resx">
+      <DependentUpon>201808161127550_Other Tables added.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808161130147_Actor and movie relations.resx">
+      <DependentUpon>201808161130147_Actor and movie relations.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
