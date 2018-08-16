@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Movies.Enums
+namespace Movies.Entity.Enums
 {
     public enum Gender
     {

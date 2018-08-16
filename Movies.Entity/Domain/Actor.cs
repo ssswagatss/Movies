@@ -1,13 +1,10 @@
-﻿using Movies.Enums;
+﻿using Movies.Entity.Enums;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Movies.Domain
+namespace Movies.Domain.Entity
 {
     public class Actor
     {

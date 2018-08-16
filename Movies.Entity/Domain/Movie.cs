@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Movies.Domain
+namespace Movies.Domain.Entity
 {
     public class Movie
     {

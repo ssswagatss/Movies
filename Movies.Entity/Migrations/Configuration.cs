@@ -1,20 +1,20 @@
-namespace Movies.Migrations
+namespace Movies.Entity.Migrations
 {
-    using Movies.Domain;
+    using Movies.Domain.Entity;
     using System;
     using System.Collections.Generic;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<Movies.Domain.MovieContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<MovieContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(Movies.Domain.MovieContext context)
+        protected override void Seed(MovieContext context)
         {
             //  This method will be called after migrating to the latest version.
 
