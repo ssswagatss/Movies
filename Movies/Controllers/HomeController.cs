@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Movies.Data.Repositories;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,7 +11,9 @@ namespace Movies.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            var arepo = new ActorRepository(new Domain.Entity.MovieContext());
+            var actor = arepo.GetActorByActorName("Pradeep Maharathi");
+            return Json(new { actor.Name, actor.ActorId }, JsonRequestBehavior.AllowGet);
         }
 
         public ActionResult About()
