@@ -60,6 +60,21 @@ namespace Movies.WinConsole
 
                 }
 
+                //List all Actors
+                Console.WriteLine("Listing only actors-------------------------------");
+                var actors = db.Users.Where(x => x is Actor).ToArray();
+                foreach (var a in actors)
+                {
+                    Console.WriteLine($"{a.Name}");
+                }
+
+                Console.WriteLine("Listing only Producers-------------------------------");
+                var producers = db.Users.Where(x => x is Producer).ToArray();
+                foreach (var p in producers)
+                {
+                    Console.WriteLine($"{p.Name}");
+                }
+
             }
 
             Console.WriteLine("Press any key to exist..");
