@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies.Entity", "Movies.Ent
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies.Data", "Movies.Data\Movies.Data.csproj", "{5F2BC2A1-B91C-4BA9-A11B-A65E4B016E1C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movies.WinConsole", "Movies.WinConsole\Movies.WinConsole.csproj", "{68974C21-A9A6-455C-A280-DDC5DF71D119}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{5F2BC2A1-B91C-4BA9-A11B-A65E4B016E1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F2BC2A1-B91C-4BA9-A11B-A65E4B016E1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F2BC2A1-B91C-4BA9-A11B-A65E4B016E1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68974C21-A9A6-455C-A280-DDC5DF71D119}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68974C21-A9A6-455C-A280-DDC5DF71D119}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68974C21-A9A6-455C-A280-DDC5DF71D119}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68974C21-A9A6-455C-A280-DDC5DF71D119}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

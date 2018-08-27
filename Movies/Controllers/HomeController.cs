@@ -13,8 +13,9 @@ namespace Movies.Controllers
         {
             var arepo = new ActorRepository(new Domain.Entity.MovieContext());
             var actor = arepo.GetActorByActorName("Pradeep Maharathi");
-            return Json(new { actor.Name, actor.ActorId }, JsonRequestBehavior.AllowGet);
+            return Json(new { actor.Name, actor.UserId }, JsonRequestBehavior.AllowGet);
         }
+
 
         public ActionResult About()
         {

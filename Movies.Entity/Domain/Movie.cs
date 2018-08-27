@@ -11,7 +11,6 @@ namespace Movies.Domain.Entity
     public class Movie
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int MovieId { get; set; }
 
         [MaxLength(255)]
@@ -20,12 +19,10 @@ namespace Movies.Domain.Entity
 
         public string Plot { get; set; }
         public string PosterURL { get; set; }
+        
+        [Required]
+        public Producer Producer { get; set; }
 
-        public int? ProducerId { get; set; }
-
-        [ForeignKey("ProducerId")]
-        public Producer Producer{ get; set; }
-
-        public virtual ICollection<Actor> Actors { get; set; }
+        //public virtual ICollection<Actor> Actors { get; set; }
     }
 }

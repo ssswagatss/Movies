@@ -4,15 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DE05D8BA-24F4-42AF-9A62-99559AC1BADC}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Movies.Entity</RootNamespace>
-    <AssemblyName>Movies.Entity</AssemblyName>
+    <ProjectGuid>{68974C21-A9A6-455C-A280-DDC5DF71D119}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Movies.WinConsole</RootNamespace>
+    <AssemblyName>Movies.WinConsole</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -47,17 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Domain\Actor.cs" />
-    <Compile Include="Domain\Movie.cs" />
-    <Compile Include="Domain\MovieContext.cs" />
-    <Compile Include="Domain\Producer.cs" />
-    <Compile Include="Domain\User.cs" />
-    <Compile Include="Enums\Enums.cs" />
-    <Compile Include="Migrations\201808271133403_second_migration.cs" />
-    <Compile Include="Migrations\201808271133403_second_migration.Designer.cs">
-      <DependentUpon>201808271133403_second_migration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -65,9 +57,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201808271133403_second_migration.resx">
-      <DependentUpon>201808271133403_second_migration.cs</DependentUpon>
-    </EmbeddedResource>
+    <ProjectReference Include="..\Movies.Entity\Movies.Entity.csproj">
+      <Project>{de05d8ba-24f4-42af-9a62-99559ac1badc}</Project>
+      <Name>Movies.Entity</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

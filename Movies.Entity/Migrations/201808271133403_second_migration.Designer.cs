@@ -7,13 +7,13 @@ namespace Movies.Entity.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class firstMigration : IMigrationMetadata
+    public sealed partial class second_migration : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(firstMigration));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(second_migration));
         
         string IMigrationMetadata.Id
         {
-            get { return "201808161157132_first Migration"; }
+            get { return "201808271133403_second_migration"; }
         }
         
         string IMigrationMetadata.Source

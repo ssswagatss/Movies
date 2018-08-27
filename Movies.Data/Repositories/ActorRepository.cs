@@ -18,7 +18,7 @@ namespace Movies.Data.Repositories
         }
         public Actor GetActorByActorName(string name)
         {
-            return _context.Actors.FirstOrDefault(x => x.Name.ToLower() == name.ToLower());
+            return _context.Users.FirstOrDefault(x => x.Name.ToLower() == name.ToLower()) as Actor;
         }
     }
 }

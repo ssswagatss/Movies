@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Movies.Entity.Domain;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -13,8 +14,7 @@ namespace Movies.Domain.Entity
         {
 
         }
-        public DbSet<Actor> Actors { get; set; }
+        public DbSet<User> Users { get; set; }
         public DbSet<Movie> Movies { get; set; }
-        public DbSet<Producer> Producers { get; set; }
     }
 }

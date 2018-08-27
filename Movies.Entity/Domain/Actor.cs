@@ -1,4 +1,5 @@
-﻿using Movies.Entity.Enums;
+﻿using Movies.Entity.Domain;
+using Movies.Entity.Enums;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -6,22 +7,13 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Movies.Domain.Entity
 {
-    public class Actor
+    public class Actor : User
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int ActorId { get; set; }
+        public Actor()
+        {
+            this.UserProfile = UserProfile.Actor;
+        }
 
-        [MaxLength(255)]
-        public string  Name { get; set; }
-
-        public Gender  Sex { get; set; }
-
-        public DateTime? DateOfBirth { get; set; }
-
-        [MaxLength(500)]
-        public string Bio { get; set; }
-
-        public virtual ICollection<Movie> Movies { get; set; }
+        //public virtual ICollection<Movie> Movies { get; set; }
     }
 }
