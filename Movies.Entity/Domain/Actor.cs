@@ -12,8 +12,9 @@ namespace Movies.Domain.Entity
         public Actor()
         {
             this.UserProfile = UserProfile.Actor;
+            this.Movies = new List<Movie>();
         }
 
-        //public virtual ICollection<Movie> Movies { get; set; }
+        public virtual ICollection<Movie> Movies { get; set; }
     }
 }

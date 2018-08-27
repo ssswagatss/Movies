@@ -10,6 +10,10 @@ namespace Movies.Domain.Entity
 {
     public class Movie
     {
+        public Movie()
+        {
+            Actors = new List<Actor>();
+        }
         [Key]
         public int MovieId { get; set; }
 
@@ -23,6 +27,6 @@ namespace Movies.Domain.Entity
         [Required]
         public Producer Producer { get; set; }
 
-        //public virtual ICollection<Actor> Actors { get; set; }
+        public virtual ICollection<Actor> Actors { get; set; }
     }
 }

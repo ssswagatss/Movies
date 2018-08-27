@@ -57,6 +57,10 @@
     <Compile Include="Migrations\201808271133403_second_migration.Designer.cs">
       <DependentUpon>201808271133403_second_migration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201808271136540_many to many relation.cs" />
+    <Compile Include="Migrations\201808271136540_many to many relation.Designer.cs">
+      <DependentUpon>201808271136540_many to many relation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -67,6 +71,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201808271133403_second_migration.resx">
       <DependentUpon>201808271133403_second_migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808271136540_many to many relation.resx">
+      <DependentUpon>201808271136540_many to many relation.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
