@@ -61,6 +61,10 @@
     <Compile Include="Migrations\201808271136540_many to many relation.Designer.cs">
       <DependentUpon>201808271136540_many to many relation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201808271247169_removes user profile.cs" />
+    <Compile Include="Migrations\201808271247169_removes user profile.Designer.cs">
+      <DependentUpon>201808271247169_removes user profile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -74,6 +78,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201808271136540_many to many relation.resx">
       <DependentUpon>201808271136540_many to many relation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808271247169_removes user profile.resx">
+      <DependentUpon>201808271247169_removes user profile.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

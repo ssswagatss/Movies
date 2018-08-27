@@ -11,7 +11,6 @@ namespace Movies.Domain.Entity
     {
         public Actor()
         {
-            this.UserProfile = UserProfile.Actor;
             this.Movies = new List<Movie>();
         }
 

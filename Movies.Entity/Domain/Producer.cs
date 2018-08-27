@@ -11,12 +11,8 @@ namespace Movies.Domain.Entity
     {
         public Producer()
         {
-            this.UserProfile = UserProfile.Producer;
         }
 
-        //public int MovieId { get; set; }
-
-        //[ForeignKey("MovieId")]
         public virtual Movie Movie { get; set; }
     }
 }

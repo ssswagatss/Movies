@@ -11,9 +11,9 @@ namespace Movies.Entity.Enums
         Male=1,
         Female=2
     }
-    public enum UserProfile
-    {
-        Actor=1,
-        Producer=2,
-    }
+    //public enum UserProfile
+    //{
+    //    Actor=1,
+    //    Producer=2,
+    //}
 }

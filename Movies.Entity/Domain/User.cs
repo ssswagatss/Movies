@@ -24,6 +24,5 @@ namespace Movies.Entity.Domain
 
         [MaxLength(500)]
         public string Bio { get; set; }
-        public UserProfile UserProfile { get; set; }
     }
 }
